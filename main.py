@@ -16,7 +16,6 @@ countdownTurtle = turtle.Turtle()
 countdownTurtle.hideturtle()
 gameOver = False
 
-
 def setupScoreTurtle():
     topHeight = background.window_height() / 2
 
@@ -28,9 +27,7 @@ def setupScoreTurtle():
     score_board.goto(0, y)
     score_board.write(arg="Skor:0", align="center", font=("Courier", 24, "normal"))
 
-
 setupScoreTurtle()
-
 
 def countdown(t):
     global gameOver
@@ -53,7 +50,6 @@ def countdown(t):
         countdownTurtle.clear()
         countdownTurtle.write(arg="Game Over!", align="center", font=("Courier", 24, "normal"))
 
-
 def action():
     def handleClick(x, y):
 
@@ -72,7 +68,6 @@ def action():
             myTurtle.goto(x, y)
             myTurtle.showturtle()
             time.sleep(0.5)
-
 
 countdown(20)
 action()
